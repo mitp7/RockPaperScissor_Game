@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-position: no-repeat;
+    background-attachment: fixed;
+    background-image: radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.hero {
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (1, 1fr);
+    grid-template-areas: 
+    "game-title score-board";
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 15px;
+    width: 60%;
+    padding: 1.5rem;
+
+}
+
+.game-title {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    grid-area: game-title;
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 1.7em;
+}
+
+.score-board {
+    grid-area: score-board;
+    line-height: 150%;
+    background-color: white;
+    border-radius: 15px;
+    width: 60%;
+    margin-left: 37%;
+    
+}
+
+.score-box {
+    color: hsl(229, 64%, 46%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10%;
+}
+
+#score {
+    color: hsl(229, 25%, 31%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 4.4em;
+    text-align: center;
+
+}
+
+.background {
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    border: 20px solid hsl(230, 89%, 62%);
+}
+
+#paper {
+    padding: 1.9em;
+}
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1024px) {
+    .game-title {
+        font-size: 1.6em;
+        line-height: 1.7em;
+    }
+    
+    .score-board {
+        width: 75%;
+        margin-left: 20%;
+        border-radius: 15px;
+        line-height: 150%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 1em;
+        line-height: 1.7em;
+    }
+    
+    .score-board {
+        width: 75%;
+        margin-left: 20%;
+        border-radius: 15px;
+        line-height: 100%;
+    }
+
+    .score-box {
+        font-size: 0.75em;
+        padding-top: 10%;
+    }
+    #score {
+        font-weight: 700;
+        font-size: 2.3em;    
+    }
+}
+
+@media (max-width: 480px) {
+    .game-title {
+        font-size: 0.65em;
+        line-height: 1.7em;
+    }
+    
+    .score-board {
+        width: 100%;
+        margin-left: 37%;
+        border-radius: 5px;
+        line-height: 80%;
+    }
+    
+    .score-box {
+        font-size: 0.4em;
+        padding-top: 10%;
+    }
+    #score {
+        font-weight: 700;
+        font-size: 1.5em;    
+    }
+}

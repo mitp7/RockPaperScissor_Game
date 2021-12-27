@@ -8,34 +8,43 @@
   <!-- Styles & Fonts -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
   
   <!-- Favicon & Title -->
   <title>Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="hero">
+    <div class = "main-content">
+      <div class = "game-title">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+      </div>
+      <div class = "score-board">
+        <div class="score-box">
+          <h2>SCORE</h2> <br>
+        </div>
+        <h1 id="score">12</h1>
+      </div>
+    </div>
+  </div>
 
+  <div class="selector">
+    <!--  <img src = "images/bg-triangle.svg" alt="triangle_boundary">-->
+    <div class="background">
+      <div class="paper-icon">
+        <img src = "images/icon-paper.svg" id = "paper" alt="paper">
+      </div>
+    </div>
+  </div>
 
-  
+  <!--
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  -->
 </body>
 </html>

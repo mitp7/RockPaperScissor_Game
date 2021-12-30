@@ -31,8 +31,6 @@ Users should be able to:
 
 [Live Game](https://mitp7rps.netlify.app/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup

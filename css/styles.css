@@ -479,7 +479,7 @@ body {
     }
 
     .selector {
-        background-position: 6rem 5rem;
+        background-position: 3.7rem 5rem;
     }
     
     .background-icon {
@@ -508,7 +508,7 @@ body {
 
     .rulesBtn {
         width: 30%;
-        margin-left: 35%;
+        margin-left: 40%;
         margin-top: 15%;
     }
 
@@ -521,8 +521,6 @@ body {
         padding-top: 15%;
         padding-left: 0%;
     }
-
-    /*----------------------------------------------------------------*/
 
     .final-selection {
         grid-template-columns: repeat (2, 1fr);

@@ -271,6 +271,7 @@ body {
     color: #fff;
     display: flex;
     align-items: center;
+    grid-area: play-again;
     height: 50%;
     justify-content: space-evenly;
     flex-direction: column;
@@ -293,7 +294,7 @@ body {
     background: #fff;
     border-radius: 10px;
     border: 1px solid hsl(217, 16%, 45%);
-    color: red;
+    color: hsl(229, 25%, 31%);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -448,7 +449,6 @@ body {
 }
 
 @media (max-width: 480px) {
-
     .main-content {
         width: 70%;
         padding: 1rem;
@@ -521,4 +521,120 @@ body {
         padding-top: 15%;
         padding-left: 0%;
     }
+
+    /*----------------------------------------------------------------*/
+
+    .final-selection {
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+        grid-template-areas: 
+        "player-pick computer-pick"
+        "play-again play-again";
+
+    }
+    
+    .background-icon2 {
+        width: 8em;
+        height: 8em;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: inset 0em 0.4em 0.4em grey;
+    }
+    
+    .selection2 {
+        display: block;
+        padding: 1.3em;
+        transition: transform .5s;
+    }
+    
+    .player-pick {
+        margin-top: 30%;
+        margin-right: 20%;
+        align-content: center;
+    }
+    
+    .player-rock, .player-paper, .player-scissors {
+        margin-top: 5%;
+        margin-left: 35%;
+    }
+    
+    .player-paper-color {
+        border: 15px solid hsl(230, 89%, 62%);
+    }
+    
+    .player-scissors-color {
+        border: 15px solid hsl(39, 89%, 49%);
+    }
+    
+    .player-rock-color {
+        border: 15px solid hsl(349, 71%, 52%);
+    }
+    
+    .computer-pick {
+        grid-area: computer-pick;
+        margin-top: 21%;
+        margin-left: 40%;
+    }
+    
+    .computer-paper-color {
+        border: 15px solid hsl(230, 89%, 62%);
+    }
+    
+    .computer-scissors-color {
+        border: 15px solid hsl(39, 89%, 49%);
+    }
+    
+    .computer-rock-color {
+        border: 15px solid hsl(349, 71%, 52%);
+    }
+    
+    
+    .player-title {
+        font-size: 1em;
+        padding-left: 49%;
+    }
+    
+    .comp-title {
+        padding-left: 20%;
+        font-size: 1em;
+        padding-bottom: 7%;
+    }
+
+    .play-again {
+        color: #fff;
+        display: flex;
+        align-items: flex-start;
+        height: 70%;
+        justify-content: left;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 18%;
+    }
+    
+    
+    .play-again h1 {
+        font-size: 23px;
+        margin-left: 39%;
+        color: #fff;
+    }
+    
+    .play-btn {
+        width: 40%;
+        height: 50%;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid hsl(217, 16%, 45%);
+        color: hsl(229, 25%, 31%);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+    
 }

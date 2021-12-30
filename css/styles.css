@@ -74,6 +74,7 @@ body {
     background-image: url(../images/bg-triangle.svg);
     background-repeat: no-repeat;
     background-position: 50% 60%;
+    visibility: visible;
 }
 
 .background-icon {
@@ -100,7 +101,6 @@ body {
     margin-top: 10%;
     margin-left: 74.5%;
     border: 20px solid hsl(230, 89%, 62%);
-    
 }
 
 .background-scissors {
@@ -182,10 +182,29 @@ body {
 
 .final-selection {
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat (1, 1fr);
     grid-template-areas: 
-    "player-pick computer-pick";
+    "player-pick play-again computer-pick";
+}
+
+.background-icon2 {
+    width: 11em;
+    height: 11em;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: inset 0em 0.4em 0.4em grey;
+}
+
+.selection2 {
+    display: block;
+    padding: 2.5em;
+    transition: transform .5s;
+}
+
+.selection2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .player-pick {
@@ -195,28 +214,98 @@ body {
     align-content: center;
 }
 
-.player-title {
-    color: white;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 1.5em;
-    padding-left: 77%;
+.player-rock, .player-paper, .player-scissors {
+    margin-top: 5%;
+    margin-left: 62%;
+}
+
+.player-paper-color {
+    border: 23px solid hsl(230, 89%, 62%);
+}
+
+.player-scissors-color {
+    border: 23px solid hsl(39, 89%, 49%);
+}
+
+.player-rock-color {
+    border: 23px solid hsl(349, 71%, 52%);
 }
 
 .computer-pick {
     grid-area: computer-pick;
     margin-top: 10%;
-    margin-right: 45%;
+    margin-left: 20%;
+}
+
+.computer-paper-color {
+    border: 23px solid hsl(230, 89%, 62%);
+}
+
+.computer-scissors-color {
+    border: 23px solid hsl(39, 89%, 49%);
+}
+
+.computer-rock-color {
+    border: 23px solid hsl(349, 71%, 52%);
+}
+
+
+.player-title {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-left: 67%;
 }
 
 .comp-title {
     color: white;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 600;
-    padding-left: 40%;
+    padding-left: 0%;
     font-size: 1.5em;
-    padding-bottom: 10%;
+    padding-bottom: 6.5%;
 }
+
+.play-again {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 18%;
+}
+
+.play-again h1 {
+    font-size: 52px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.play-btn {
+    width: 190px;
+    height: 55px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid hsl(217, 16%, 45%);
+    color: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.play-btn:hover {
+    transform: scale(1.03);
+}
+
 .attribution {
     font-size: 11px; text-align: center; 
 }
@@ -341,6 +430,20 @@ body {
     .rulesDisplay {
         padding-top: 15%;
         padding-left: 10%;
+    }
+
+    .player-rock, .player-paper, .player-scissors {
+        margin-top: 10%;
+        margin-left: 18%;
+    }
+
+    .player-title {
+        padding-left: 30%;
+    }
+
+        
+    .comp-title {
+        padding-bottom: 10%;
     }
 }
 

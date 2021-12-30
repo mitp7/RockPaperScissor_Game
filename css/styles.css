@@ -85,6 +85,7 @@ body {
 }
 
 .selection {
+    display: block;
     padding: 1.8em;
     transition: transform .5s;
 }
@@ -179,6 +180,43 @@ body {
     cursor: pointer;
 }
 
+.final-selection {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (1, 1fr);
+    grid-template-areas: 
+    "player-pick computer-pick";
+}
+
+.player-pick {
+    grid-area: player-pick;
+    margin-top: 10%;
+    margin-right: 15%;
+    align-content: center;
+}
+
+.player-title {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-left: 77%;
+}
+
+.computer-pick {
+    grid-area: computer-pick;
+    margin-top: 10%;
+    margin-right: 45%;
+}
+
+.comp-title {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    padding-left: 40%;
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}
 .attribution {
     font-size: 11px; text-align: center; 
 }

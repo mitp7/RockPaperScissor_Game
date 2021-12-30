@@ -16,16 +16,20 @@
 ## Overview
 
 ### The objective
-- Combine my HTML and CSS skills to create a front-end landing page. Implement components using CSS Grid skills to ensure the page is responsive.
+- Learn and use JavaScript DOM manipulation to interact with the front-end components to create the game.
 
 Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-![Desktop-version](./design/desktop-design.jpg)
-#### Lighthouse Test Screenshot
-![Desktop-version](./images/lighthouse-test.PNG)
+![Desktop-version](./images/desktop-step-1.jpg)
+![Desktop-version](./images/outcome.png)
+![Desktop-version](./images/desktop-rules-modal.jpg)
+#### Mobile Version
+![Mobile-version](./images/mobile-step-1.jpg)
+
+[Live Game](https://mitp7rps.netlify.app/)
 
 ## My process
 
@@ -34,8 +38,4 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
-
-### What I learned
-
-From this challenge I learned more about CSS Grid and the various properties it has such as grid template columns, rows, and areas. Using these grid properties resulted in all of the components being very responsive further reducing the amount of time spent working with the media queries and adjusting the sizes for different sized screens.
-I also learned more about how to use background iamges and the correct ways to layout the images behind text and buttons. 
+- JavaScript

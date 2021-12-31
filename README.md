@@ -1,5 +1,5 @@
 <a href="https://mitp7rps.netlify.app/">
-    <img src="images/logo.svg" alt="Fylo-logo" title="Fylo" align="right" height="61" target="__blank"/>
+    <img src="images/logo.svg" alt="Fylo-logo" title="Fylo" align="right" height="61" target="_blank"/>
 </a>
 
 # Rock, Paper, and Scissors Game

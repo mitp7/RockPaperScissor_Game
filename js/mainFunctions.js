@@ -1,19 +1,14 @@
 // Initialize player score to zero
 let playerScore = 0;
-// Get the paper button 
+// Get all of the required elements
 const paper = document.getElementById('paper');
-// Get the rock button  
 const rock = document.getElementById('rock');
-// Get the scissors button 
 const scissors = document.getElementById('scissors');
-// Gets the options element to choose either rock, paper, or scissors at the start
 const options = document.getElementsByClassName('selector')[0];
-// Gets the score element
 const gameScore = document.getElementById('score');
-// Gets the game element which displays the options chosen and the winner of that round
 const inGame = document.getElementsByClassName('in-game')[0];
 
-// Function which randomly chooses a option from either rock, paper, or scissors which represents the computer
+// Function which randomly chooses a option from either rock, paper, or scissors which represents the computers choice
 function computerChoice() {
     const choices = ['paper', 'rock', 'scissors'];
     const randomChoice = Math.floor(Math.random() * 3);
@@ -147,11 +142,9 @@ function game(playerChoice){
     });
 }
 
-// Get rules modal element 
+// Get the modal elements
 const modal = document.getElementById('simpleModal');
-// Get button which opens the modal
 const modalBtn = document.getElementById('openBtn');
-// Get button which closes the modal
 const closeBtn = document.getElementById('closeBtn');
 
 // Listen for open modal click
